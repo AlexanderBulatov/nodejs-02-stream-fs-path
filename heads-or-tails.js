@@ -39,7 +39,7 @@ let recursiveAsyncReadLine = function () {
     else {
       let headsTails = getRandomInt(1, 3);
 
-      rl.question(`гадай ${headsTails}`, (answer) => {
+      rl.question(`Try to guess! /spoiler -  ${headsTails}/: `, (answer) => {
         if (Number(answer) === headsTails) {
           console.log('you win!');
           dataLog.gameResult[dataLog.gameResult.length] = 'win';
